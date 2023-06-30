@@ -1,0 +1,100 @@
+  body {
+    margin: 0%;
+    font-family: 'Roboto';
+    font-size: 22px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .flex-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  }
+
+  .tech-icons {
+    margin-top: 14px; 
+    margin-right: 2px;
+  }
+
+  nav {
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .brand h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .brand span {
+    font-weight: 400;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    /* color: #555; */
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /* --- PROFILE IMAGE --- */
+  .profile-image {
+    border-radius: 50%;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    overflow: hidden;
+    position: relative;
+    animation: border-animation 10s infinite alternate;
+  }
+  
+  @keyframes border-animation {
+    0% {
+      border-color: #ff0000;
+    }
+    25% {
+      border-color: #00ff00;
+    }
+    50% {
+      border-color: #0000ff;
+    }
+    75% {
+      border-color: #ffff00;
+    }
+    100% {
+      border-color: #ff00ff;
+    }
+  }
+
+  .img-ani img {
+    transition: filter 0.2s;
+  }
+  
+  .img-ani:hover img {
+    filter: grayscale(60%);
+  }
